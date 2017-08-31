@@ -1,5 +1,7 @@
 <?php
 
+namespace src;
+
 use Spatie\ArrayToXml\ArrayToXml;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Exception\LogicException;
@@ -144,6 +146,7 @@ class TeamcityCodeAnalysisTransformCommand extends Command
                 return 1;
             case "WARNING":
                 return 2;
+            case "TYPO":
             case "WEAK WARNING":
                 return 3;
             default:

@@ -9,6 +9,7 @@ services:
     volumes:
       - /root/.BuildServer
       - /opt/TeamCity/logs
+      - /var/lib/mysql
     ports:
       - "8111:8111"
     networks:
@@ -23,6 +24,7 @@ services:
         agent_name: 'batagent1'
     volumes:
       - /opt/agent/conf
+      - /vagrant:/opt/project
     networks:
       - teamcity_network
 networks:

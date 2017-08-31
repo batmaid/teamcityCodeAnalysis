@@ -4,6 +4,6 @@
         "spatie/array-to-xml": "^2.6"
     },
     "autoload": {
-        "psr-4": {"\\": "/src"}
+        "psr-4": {"src\\": "src"}
     }
 }
