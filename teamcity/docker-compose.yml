@@ -1,0 +1,30 @@
+version: '2'
+services:
+  batserver:
+    container_name: 'batserver'
+    build:
+        context: ./batserver
+        args:
+            mysql_root_password: 'server_password'
+    volumes:
+      - /root/.BuildServer
+      - /opt/TeamCity/logs
+    ports:
+      - "8111:8111"
+    networks:
+      - teamcity_network
+  batagent1:
+    container_name: 'batagent1'
+    build:
+      context: ./batagent
+      args:
+        mysql_root_password: 'agent_password'
+        server_dns_name: 'batserver'
+        agent_name: 'batagent1'
+    volumes:
+      - /opt/agent/conf
+    networks:
+      - teamcity_network
+networks:
+  teamcity_network:
+    driver: bridge

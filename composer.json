@@ -1,0 +1,9 @@
+{
+    "require": {
+        "symfony/console": "^3.3",
+        "spatie/array-to-xml": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {"\\": "/src"}
+    }
+}
