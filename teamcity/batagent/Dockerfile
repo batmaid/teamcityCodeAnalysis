@@ -27,7 +27,6 @@ RUN apt-get update && apt-get install -y software-properties-common language-pac
 
 COPY php/mods-available/batmaid.ini /etc/php/7.1/mods-available/
 RUN cd /etc/php/7.1/cli/conf.d/ && ln -s ../../mods-available/batmaid.ini 99-batmaid.ini
-COPY auth.json /root/.composer/
 
 #install teamcity agent
 RUN mkdir /opt/agent -p \
