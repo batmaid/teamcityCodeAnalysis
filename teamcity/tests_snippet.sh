@@ -1,0 +1,1 @@
+/opt/project/vendor/phpunit/phpunit/phpunit /opt/project/test/ --teamcity

@@ -1,0 +1,10 @@
+<problems is_local_tool="true">
+    <problem>
+        <file>file://$PROJECT_DIR$/src/FileWithWeakWarning.php</file>
+        <line>8</line>
+        <entry_point TYPE="file"
+                     FQNAME="file://$PROJECT_DIR$/src/FileWithWeakWarning.php"/>
+        <problem_class severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused import</problem_class>
+        <description>Import 'Symfony\Component\Validator\Constraints as Assert' is never used</description>
+    </problem>
+</problems>

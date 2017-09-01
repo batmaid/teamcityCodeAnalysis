@@ -1,0 +1,27 @@
+<problems is_local_tool="true">
+
+    <problem>
+        <file>file://$PROJECT_DIR$/src/FileWithError.php</file>
+        <line>8</line>
+        <entry_point TYPE="file"
+                     FQNAME="file://$PROJECT_DIR$/src/FileWithError.php"/>
+        <problem_class severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Undefined class</problem_class>
+        <description>Undefined class UniqueChoices</description>
+    </problem>
+    <problem>
+        <file>file://$PROJECT_DIR$/src/FileWithMultipleViolationTypes.php</file>
+        <line>9</line>
+        <entry_point TYPE="file"
+                     FQNAME="file://$PROJECT_DIR$/src/FileWithMultipleViolationTypes.php"/>
+        <problem_class severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Undefined class</problem_class>
+        <description>Undefined class EWZRecaptchaType</description>
+    </problem>
+    <problem>
+        <file>file://$PROJECT_DIR$/src/FileWithMultipleViolationTypes.php</file>
+        <line>10</line>
+        <entry_point TYPE="file"
+                     FQNAME="file://$PROJECT_DIR$/src/FileWithMultipleViolationTypes.php"/>
+        <problem_class severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Undefined class</problem_class>
+        <description>Undefined class IsTrue</description>
+    </problem>
+</problems>

@@ -1,9 +1,13 @@
 {
-    "require": {
-        "symfony/console": "^3.3",
-        "spatie/array-to-xml": "^2.6"
-    },
-    "autoload": {
-        "psr-4": {"src\\": "src"}
+  "require": {
+    "symfony/console": "^3.3",
+    "spatie/array-to-xml": "^2.6",
+    "phpunit/phpunit": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "src\\": "src",
+      "test\\": "test"
     }
+  }
 }
