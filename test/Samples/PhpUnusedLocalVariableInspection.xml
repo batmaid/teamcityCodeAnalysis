@@ -8,6 +8,6 @@
                      FQNAME="file://$PROJECT_DIR$/src/FileWithWarning.php"/>
         <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable
         </problem_class>
-        <description>Unused local variable $contentPageOptions</description>
+        <description>Unused local variable $foo</description>
     </problem>
 </problems>

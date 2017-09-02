@@ -13,6 +13,6 @@ class HappyClass
 
     public function printHello()
     {
-        echo $this->provider->sayHello();
+        echo $this->provider->getHello();
     }
 }
